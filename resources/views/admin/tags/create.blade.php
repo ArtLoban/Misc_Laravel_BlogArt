@@ -3,11 +3,11 @@
 @section('content')
 
 <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
+<div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Добавить категорию
+            Добавить тег
             <small>приятные слова..</small>
         </h1>
     </section>
@@ -18,10 +18,10 @@
         <!-- Default box -->
         <div class="box">
 
-            {!! Form::open(['route' => 'categories.store']) !!}
+            {!! Form::open(['route' => 'tags.store']) !!}
 
             <div class="box-header with-border">
-                <h3 class="box-title">Добавляем категорию</h3>
+                <h3 class="box-title">Добавляем тег</h3>
             </div>
             <div class="box-body">
                 <div class="col-md-6">
@@ -36,12 +36,12 @@
             </div>
             <!-- /.box-body -->
             <div class="box-footer">
-                <a href="{{ route('categories.index')}}" class="btn btn-default">Назад</a>
+                <a href="{{ route('tags.index')}}" class="btn btn-default">Назад</a>
                 <button class="btn btn-success pull-right">Добавить</button>
             </div>
             <!-- /.box-footer-->
-            {!! Form::close() !!}
 
+            {!! Form::close() !!}
         </div>
         <!-- /.box -->
 
